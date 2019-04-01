@@ -1,5 +1,5 @@
 ---
-title: Texts + GitHub Pages = Blog
+title: Build your first website using MERN stack!
 ---
 
 Follow simple [instructions](<http://www.texts.io/support/0017/>) to publish
@@ -9,12 +9,12 @@ Texts is “rich editor for plain text”—you can write documents in visual
 interface and they will be saved in plain text format with Markdown markup. This
 document shows some of the styles available in Texts.
 
-Images
+Getting Started
 ------
 
 ![](<../images/radcliffe-camera.jpg>)
 
-Math
+Prerequisites
 ----
 
 Formulas can be placed inline like $$E=mc^2$$ or in a separate paragraph, like
@@ -24,7 +24,7 @@ $$
 \frac{n!}{k!(n-k)!} = \binom{n}{k}
 $$
 
-Code
+Set up using CLI
 ----
 
 Inline `code` gets monospaced font.
@@ -40,7 +40,7 @@ print_hi('Tom')
 Press “Enter” key inside code block to insert a line break or “Shift+Enter” to
 end code block.
 
-Footnotes
+Run the basic template
 ---------
 
 Notes can be placed anywhere[^1] in the source file. When document is published
@@ -49,7 +49,7 @@ of the page. E-book readers usually display notes in popups.
 
 [^1]: Yes, right here.
 
-Lists
+Implement Features
 -----
 
 -   First bulleted item.
@@ -64,7 +64,7 @@ Press “Tab” to indent paragraph and create subitem, “Shift+Tab” to unind
 
 2.  Second numbered item.
 
-Tables
+Going Further to Deployment
 ------
 
 | **Features** | **Editable in Texts** | **Export to PDF** | **Export to HTML** |
@@ -74,7 +74,3 @@ Tables
 | Images       | ✓                     | ✓                 | ✓                  |
 | Tables       | ✓                     | ✓                 | ✓                  |
 
-Happy writing!
-==============
-
-Got a question? Visit <http://www.texts.io/>.
