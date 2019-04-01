@@ -1,8 +1,8 @@
 ---
-title: Typesetting Math in Texts
+title: Convolutional Neural Networks(CNNs)
 ---
 
-Basic math
+What is Convolutional Neural Network(CNNs)?
 ----------
 
 Whenever you typeset mathematical notation, it needs to have “Math” style. For
@@ -22,7 +22,7 @@ Named mathematics operators are usually typeset in roman. Most of the standards
 are already available. Some examples: $$\det A$$, $$\cos\pi$$, and
 $$\log(1-x)$$.
 
-Displayed equations
+Where is it used?
 -------------------
 
 When an equation becomes too large to run in-line, you display it in a “Math”
@@ -70,7 +70,7 @@ x & \text{when $x \ge 0$ and} \\
 \end{cases}
 $$
 
-Relations and operations
+Basic Implementation & Demonstration
 ------------------------
 
 -   Equality-like: $$x=2$$, $$x \not= 3$$, $$x \cong y$$, $$x \propto y$$,
@@ -101,13 +101,13 @@ Relations and operations
 
 -   Calculus: $$\partial F/\partial x$$, $$\nabla g$$.
 
-Use the right dots
+Why CNNs are important to our generation.
 ------------------
 
 Do not type three periods; instead use `\cdots` between operations and `\ldots`
 in lists: $$x_1 + x_2 + \cdots + x_n$$ and $$(x_1,x_2,\ldots,x_n)$$.
 
-Built up structures
+Summary
 -------------------
 
 -   Fractions: $$\frac{1}{2}$$, $$\frac{x-1}{x-2}$$.
@@ -163,43 +163,6 @@ Built up structures
           0 & 0 & 0 & \cdots & \lambda_n
         \end{matrix}
         \right].
-    $$
-
-Delimiters
-----------
-
--   Parentheses and square brackets are easy: $$(x-y)(x+y)$$, $$[3-x]$$.
-
--   For curly braces use `\{` and `\}`: $$\{x : 3x-1 \in A\}$$.
-
--   Absolute value: $$\vert x-y\vert$$, $$\vert\vec{x} - \vec{y}\vert$$.
-
--   Floor and ceiling: $$\lfloor \pi \rfloor = \lceil e \rceil$$.
-
--   To make delimiters grow so they are properly sized to contain their
-    arguments, use `\left` and `\right`:
-
-    $$
-    \left[ \sum_{n=0}^\infty a_n x^n \right]^2 =
-    \exp \left\{ - \frac{x^2}{2} \right\}
-    $$
-
-    Occasionally, it is useful to coerce a larger sized delimiters than
-    `\left`/`\right` produce. Look at the two sides of this equation:
-
-    $$
-    \left((x_1+1)(x_2-1)\right)
-    =
-    \bigl((x_1+1)(x_2-1)\bigl).
-    $$
-
-    I think the right is better. Use `\bigl`, `\Bigl`, `\biggl`, and the
-    matching `\bigr`, etc.
-
--   Underbraces:
-
-    $$
-    \underbrace{1+1+\cdots+1}_{\text{$n$ times}} = n .
     $$
 
 Styled and decorated letters
