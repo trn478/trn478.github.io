@@ -17,17 +17,16 @@ Getting Started
 Prerequisites
 ----
 
-Formulas can be placed inline like $$E=mc^2$$ or in a separate paragraph, like
-the following one. Standard LaTeX syntax is supported.
+First, you need [Node.js](https://nodejs.org) downloaded.
 
-$$
-\frac{n!}{k!(n-k)!} = \binom{n}{k}
-$$
+Then you would use **npm** command to install other dependencies.
 
-Set up using CLI
+Set up Angular using Angular CLI
 ----
 
-Inline `code` gets monospaced font.
+Install Angular CLI
+
+    npm install -g @angular/cli
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ruby
 def print_hi(name)
