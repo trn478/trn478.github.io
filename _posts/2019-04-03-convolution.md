@@ -5,25 +5,59 @@ title: Convolutional Neural Networks(CNNs)
 What is Convolutional Neural Network(CNNs)?
 ----------
 
-Whenever you typeset mathematical notation, it needs to have “Math” style. For
-example: If $$a$$ is an integer, then $$2a+1$$ is odd.
+Convolutional neural network are used to find patterns in a given image. Through convolution over an image, for pixels in rows and column of the image, seeking suitable patterns. Layers in CNNs that helps the model identify images. 
 
-Superscripts and subscripts are created using the characters `^` and `_`,
-respectively: $$x^2+y^2=1$$ and $$a_n=0$$. It is fine to have both on a single
-letter: $$x_0^2$$.
-
-If the superscript [or subscript] is more than a single character, enclose the
-superscript in curly braces: $$e^{-x}$$.
-
-Greek letters are typed using commands such as `\gamma` ($$\gamma)$$ and
-`\Gamma` ($$\Gamma$$).
-
-Named mathematics operators are usually typeset in roman. Most of the standards
-are already available. Some examples: $$\det A$$, $$\cos\pi$$, and
-$$\log(1-x)$$.
 
 Where is it used?
 -------------------
+
+CNNs was a major breakthrough for AI, it has made massive improvements possible for certain stagnant fields of Machine Learning, such as neural network. CNNs enabled developers with the capability of providing the end-user with more personalized products and services.
+
+## Main Fields using CNN
+
+1) **Self-driving** cars using Object detection
+
+2) **Personalized** Medicine
+
+3) **Recommendation** Programs used by YouTube, Amazon, Netflix, etc.
+
+4) Natural Language Processing (**NLP**) used by Siri, and many others
+
+
+Basic Implementation & Demonstration using Keras
+------------------------
+
+-   First download [Python]()
+
+-   Install Keras using pip
+
+      pip install keras
+
+-   Arrows: $$x \to y$$, $$y\gets x$$, $$A \Rightarrow B$$, $$A \iff B$$, $$x
+    \mapsto f(x)$$, $$A \Longleftarrow B$$.
+
+-   Set stuff: $$x \in A$$, $$b \notin C$$, $$A \ni x$$. Use `\notin` rather
+    than `\not\in`. $$A \cup B$$, $$X \cap Y$$, $$A \setminus B = \emptyset$$.
+
+-   Arithmetic: $$3+4$$, $$5-6$$, $$7\cdot 8 = 7\times8$$,
+    $$3\div6=\frac{1}{2}$$, $$f\circ g$$, $$A \oplus B$$, $$v \otimes w$$.
+
+-   Mod: As a binary operation, use `\bmod`: $$x \bmod N$$. As a relation use
+    `\mod`, `\pmod`, or `\pod`:
+
+    $$
+    \begin{aligned}
+      x &\cong y \mod 10 \\
+      x &\cong y \pmod{10} \\
+      x &\cong y \pod{10}
+    \end{aligned}
+    $$
+
+-   Calculus: $$\partial F/\partial x$$, $$\nabla g$$.
+
+
+Visualization
+------------------
 
 When an equation becomes too large to run in-line, you display it in a “Math”
 paragraph by itself.
@@ -53,10 +87,6 @@ $$
 
 To insert ordinary text inside of mathematics mode, use `\text`:
 
-$$
-f(x) = \frac{x}{x-1} \text{ for $x\not=1$}.
-$$
-
 This is the $$3^{\text{rd}}$$ time I’ve asked for my money back.
 
 The `\begin{cases}...\end{cases}` environment is perfect for defining functions
@@ -70,42 +100,12 @@ x & \text{when $x \ge 0$ and} \\
 \end{cases}
 $$
 
-Basic Implementation & Demonstration
-------------------------
-
--   Equality-like: $$x=2$$, $$x \not= 3$$, $$x \cong y$$, $$x \propto y$$,
-    $$y\sim z$$, $$N \approx M$$, $$y \asymp z$$, $$P \equiv Q$$.
-
--   Order: $$x < y$$, $$y \le z$$, $$z \ge 0$$, $$x \preceq y$$, $$y\succ z$$,
-    $$A \subseteq B$$, $$B \supset Z$$.
-
--   Arrows: $$x \to y$$, $$y\gets x$$, $$A \Rightarrow B$$, $$A \iff B$$, $$x
-    \mapsto f(x)$$, $$A \Longleftarrow B$$.
-
--   Set stuff: $$x \in A$$, $$b \notin C$$, $$A \ni x$$. Use `\notin` rather
-    than `\not\in`. $$A \cup B$$, $$X \cap Y$$, $$A \setminus B = \emptyset$$.
-
--   Arithmetic: $$3+4$$, $$5-6$$, $$7\cdot 8 = 7\times8$$,
-    $$3\div6=\frac{1}{2}$$, $$f\circ g$$, $$A \oplus B$$, $$v \otimes w$$.
-
--   Mod: As a binary operation, use `\bmod`: $$x \bmod N$$. As a relation use
-    `\mod`, `\pmod`, or `\pod`:
-
-    $$
-    \begin{aligned}
-      x &\cong y \mod 10 \\
-      x &\cong y \pmod{10} \\
-      x &\cong y \pod{10}
-    \end{aligned}
-    $$
-
--   Calculus: $$\partial F/\partial x$$, $$\nabla g$$.
-
-Why CNNs are important to our generation.
+Key Takeaway & Summary
 ------------------
 
-Do not type three periods; instead use `\cdots` between operations and `\ldots`
-in lists: $$x_1 + x_2 + \cdots + x_n$$ and $$(x_1,x_2,\ldots,x_n)$$.
+-   ConvNets represents a major accomplishment for Artificial Intelligence and will be used well into the future. Understanding how CNNs models operate can help us understand how we learn as human beings.
+
+-    The general public thinks companies like Tesla, Mercedes-Benz, BMW, and other large car companies are the ones who is inventing self-driving cars with amazing features. However, we should never forget the researchers, such as Geoffery Hilton, who made the modern technology possible. 
 
 Summary
 -------------------
@@ -203,49 +203,6 @@ $$
   \right\}^2dx
 $$
 
-Solution for quadratic:
-
-$$
-x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}
-$$
-
-Definition of derivative:
-
-$$
-f^\prime(x)\ = \lim_{\Delta x\to0}\frac{f(x+\Delta x)-f(x)}{\Delta x}
-$$
-
-Continued fraction:
-
-$$
-f=b_o+\frac{a_1}{b_1+\frac{a_2}{b_2+\frac{a_3}{b_3+a_4}}}
-$$
-
-Demonstrating `\left\{…\right.` and accents.
-
-$$
-\tilde y=\left\{ {\ddot x \mbox{ if $x$ odd}\atop\widehat{\bar x+1}\text{ if even}}\right.
-$$
-
-Overbrace and underbrace:
-
-$$
-\overbrace{a,...,a}^{\text{k a's}},
-\underbrace{b,...,b}_{\text{l b's}}\hspace{10pt}
-\underbrace{\overbrace{a...a}^{\text{k a's}},
-\overbrace{b...b}^{\text{l b's}}}_{\text{k+l elements}}
-$$
-
-Illustrating array:
-
-$$
-A\ =\ \left( \begin{array}{c|ccc}
-& 1 & 2 & 3 \\ \hline
-1&a_{11}&a_{12}&a_{13} \\
-2&a_{21}&a_{22}&a_{23} \\
-3&a_{31}&a_{32}&a_{33}
-\end{array} \right)
-$$
 
 See [Wikibook on
 LaTeX](<http://en.wikibooks.org/wiki/LaTeX/Mathematics#Symbols>) for more
