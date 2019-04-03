@@ -2,17 +2,12 @@
 title: Build your first website using MERN stack!
 ---
 
-Follow simple [instructions](<http://www.texts.io/support/0017/>) to publish
-your blog on GitHub Pages and write posts in Texts.
-
-Texts is “rich editor for plain text”—you can write documents in visual
-interface and they will be saved in plain text format with Markdown markup. This
-document shows some of the styles available in Texts.
-
 Getting Started
 ------
 
-![](<../images/radcliffe-camera.jpg>)
+![](<../images/mean.jpg>)
+
+Source: [Peerbits](https://www.peerbits.com/blog/the-power-of-mean-stack-development.html)
 
 Prerequisites
 ----
