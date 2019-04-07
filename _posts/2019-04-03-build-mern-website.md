@@ -1,13 +1,13 @@
 ---
-title: Build your first website using MERN stack!
+title: Build a Real Time chatting room using React + Firebase!
 ---
 
 Getting Started
 ------
 
-![](<../images/mean.jpg>)
+![](<../images/firebase.jpg>)
 
-Source: [Peerbits](https://www.peerbits.com/blog/the-power-of-mean-stack-development.html)
+Source: [bitsrc.io](https://blog.bitsrc.io/building-a-todo-app-in-react-with-firebase-and-redux-ba3ab53a671b)
 
 Prerequisites
 ----
@@ -16,12 +16,24 @@ First, you need [Node.js](https://nodejs.org) downloaded.
 
 Then you would use **npm** command to install other dependencies.
 
-Set up Angular using Angular CLI
+Set up React 
 ----
 
-Install Angular CLI
+Install React using React CLI
 
-    npm install -g @angular/cli
+    npm install -g create-react-app
+
+Initialize your React Project and move the the directory
+
+    create-react-app real-time-chat
+    cd real-time-chat 
+
+
+
+
+
+
+
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ruby
 def print_hi(name)
