@@ -75,7 +75,7 @@ through the kernel. The purpose of a convolution layer is to filter. As we itera
 for patterns in that particular section of the image. This is done through filters, stacks of weight represented in vector 
 form, which are multiplied by the values outputted by the convolution.
 
-Pooling Layer
+Pooling Layer & Problems related to CNNs
 -------------------
 The layer in-between successive convolution layers in CNNs architecture is called the **pooling layer**. It partitions the input 
 image into non-overlapping rectangles and, for each partition, outputs a value. The intuition behind the pooling layer is that 
@@ -95,6 +95,8 @@ The curse of dimensionality refers to various phenomena that arise when analyzin
 in low dimensional settings, such as three dimensional 
  physical space. We use the pooling layer to solve this problem and further **reduce spatial dimensions**. 
  
+ ![](<../images/overfit.png>)
+ 
  The main benefits of reducing 
  spatial dimensions are immensely improved computational performance. Furthermore, you have less parameters to train the model on,
   thus reducing the chances of **over-fitting**, which is a major problem for training any machine learning models. Briefly, over-fitting 
@@ -103,20 +105,26 @@ in low dimensional settings, such as three dimensional
    thus improving the overall reliability of the model.
    
    You can learn more about over fitting [here](https://medium.com/predict/what-overfitting-is-and-how-to-fix-it-887da4bf2cba)
+   
 
-Basic Implementation & Demonstration using Keras
-------------------------
-
--   First download [Python](https://www.python.org/downloads/)
-
--   Install Keras using pip
-
-      pip install keras
-
-
-Visualization
-------------------
-
+Activation Layer
+-------------------
+ Activation layers pass values through a function that squashes the value into a range. 
+ The most common activation function is the **ReLu** activation function.
+ 
+  ![](<../images/relu.png>)
+  
+  Source : [Medium](https://towardsdatascience.com/activation-functions-neural-networks-1cbd9f8d91d6)
+  
+  ReLu function takes an input and returns the input if the input is positive else return zero. 
+  ReLu is extremely cheap to perform and, thus commonly used in development of deep learning models
+  
+Success of CNNs
+-------------------
+It is not an overstatement that the recent surge of interest in deep learning is due to the immense popularity and 
+effectiveness of CNNs. The interest in CNNs started with AlexNet in 2012 and has grown ever since. 
+It took only 3 years for researchers to progress from 8 layer AlexNet to 152 layer ResNet.
+ Imagine how extraordinarily accurate a neural network can be with 152 layers! 
 
 Key Takeaway & Summary
 ------------------
