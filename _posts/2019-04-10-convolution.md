@@ -81,7 +81,7 @@ The layer in-between successive convolution layers in CNNs architecture is calle
 image into non-overlapping rectangles and, for each partition, outputs a value. The intuition behind the pooling layer is that 
 the exact location of a feature is less important than its rough location relative to other features.
  
- ![](https://medium.com/predict/what-overfitting-is-and-how-to-fix-it-887da4bf2cba)
+ ![](<../images/max-pool.png>)
  
  Source : [CSC231](http://cs231n.github.io/convolutional-networks/)
  
