@@ -7,6 +7,8 @@ What is Convolutional Neural Network(CNNs)?
 
 Convolutional neural network are used to find patterns in a given image. Through convolution over an image, for pixels in rows and column of the image, seeking suitable patterns. Layers in CNNs that helps the model identify images. 
 
+![](<../images/cnns.jpg>)
+
 Quick Shout out - Founder of CNNs
 ----------
 [**Geoffrey Hinton**](http://www.cs.toronto.edu/~hinton/) 
