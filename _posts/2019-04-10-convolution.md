@@ -138,9 +138,9 @@ Summary
 
 Key Takeaway
 ------------------
--   ConvNets represents a major accomplishment for Artificial Intelligence and will be used well into the future. Understanding how CNNs models operate can help us understand how we learn as human beings.
+-   CNNs represents a major accomplishment for Artificial Intelligence and will be used well into the future. Understanding how CNNs models operate can help us understand how we learn as human beings.
 
--   ConvNets is and will be the main building block for many life-changing technological improvements in the upcoming years.
+-   CNNs is and will be the main building block for many life-changing technological improvements in the upcoming years.
 
 
 
