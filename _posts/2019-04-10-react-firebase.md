@@ -5,18 +5,19 @@ title: Build a Real Time chatting room using React + Firebase!
 Getting Started
 ------
 
-![](<../images/firebase.jpg>)
+![](<../images/firebase-react.png>)
 
 Source: [bitsrc.io](https://blog.bitsrc.io/building-a-todo-app-in-react-with-firebase-and-redux-ba3ab53a671b)
 
 Benefits of React + Firebase
 ------
+
 | **Stacks** | **MEAN** | **MERN** | **React + Firebase** |
 |--------------|-----------------------|-------------------|--------------------|
-| Server | ✓                     | ✓                 |       x            |
-| Database    | ✓                     | ✓                 | x                  |
-| Front-end       | ✓                     | ✓                 | ✓      **React**            |
-| Back-end       | ✓                     | ✓                 | x                  |
+| Server | ✓                     | ✓                 |                   |
+| Database    | ✓                     | ✓                 |                   |
+| Front-end       | ✓                     | ✓                 | ✓                  |
+| Back-end       | ✓                     | ✓                 |                   |
 
 By using **Firebase** we now can develop in a **server-less** environment. 
 
@@ -29,6 +30,10 @@ Then you would use **npm** command to install other dependencies.
 
 Set up React 
 ----
+
+![](<../images/react.gif>)
+
+Source: [bitsrc.io](https://blog.bitsrc.io/building-a-todo-app-in-react-with-firebase-and-redux-ba3ab53a671b)
 
 Install React using React CLI
 
