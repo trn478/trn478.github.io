@@ -22,15 +22,10 @@ What does CNNs do?
 -------------------
 
 Through convolution over an image, for pixels in rows and column of the image, seeking suitable patterns.
-
- Layers in CNNs that helps the model identify images. To elaborate, in the first few layers of CNNs, the network identifies 
- 
+Layers in CNNs that helps the model identify images. To elaborate, in the first few layers of CNNs, the network identifies 
  lines and corners. Then, we pass these patterns to the next layer through neural networks and start recognizing more complex 
- 
  features as we get deeper into the neural network. This is similar to how our own brain works. We first identify the 
- 
  appearance of the object and then classify it, based on the complex knowledge in our memory. The ability to use multiple 
- 
  layers makes CNNs exceptional at detecting objects in high dimensional images.
 
 Where is it used?
@@ -56,6 +51,12 @@ Layers in CNNs
 2) Pooling Layer
 
 3) Activation Layer 
+
+
+
+Convolution
+-------------------
+
 
 
 Basic Implementation & Demonstration using Keras
