@@ -9,6 +9,8 @@ Convolutional neural network are used to find patterns in a given image. Through
 
 ![](<../images/cnns.jpg>)
 
+Source : [CSC231](http://cs231n.github.io/convolutional-networks/)
+
 Quick Shout out - Founder of CNNs
 ----------
 [**Geoffrey Hinton**](http://www.cs.toronto.edu/~hinton/) 
@@ -48,18 +50,59 @@ CNNs was a major breakthrough for AI, it has made massive improvements possible 
 
 Layers in CNNs
 -------------------
-1) Convolutional Layer 
+1) Convolution Layer 
 
 2) Pooling Layer
 
 3) Activation Layer 
 
+To understand how CNNs works, we must learn about convolutions. But, what are convolutions? 
 
-
-Convolution
+Convolutions & Convolution Layer
 -------------------
 
+**Convolutions** involve iterating through each pixels of the image and applying filter to find some patterns.
 
+![](<../images/convgif.gif>)
+
+Source : [NYU](https://cs.nyu.edu/~fergus/tutorials/deep_learning_cvpr12/)
+
+There is an image represented by 7x7, 7 pixels by 7 pixels, 
+matrix of value. Now you can take 3x3 matrix of value and move over the image, multiplying the 3x3 matrix with window of 
+the image to generate a single value. Then, the 3x3 matrix moves to right and down to iterate through the entire image. 
+This 3x3 matrix is called a kernel. The convolved feature will be represented as 3x3 matrix with the values generated 
+through the kernel. The purpose of a convolution layer is to filter. As we iterate through an image we effectively check 
+for patterns in that particular section of the image. This is done through filters, stacks of weight represented in vector 
+form, which are multiplied by the values outputted by the convolution.
+
+Pooling Layer
+-------------------
+The layer in-between successive convolution layers in CNNs architecture is called the **pooling layer**. It partitions the input 
+image into non-overlapping rectangles and, for each partition, outputs a value. The intuition behind the pooling layer is that 
+the exact location of a feature is less important than its rough location relative to other features.
+ 
+ ![](https://medium.com/predict/what-overfitting-is-and-how-to-fix-it-887da4bf2cba)
+ 
+ Source : [CSC231](http://cs231n.github.io/convolutional-networks/)
+ 
+ Suppose you are watching a movie in a theater. You don’t look at each pixel on the screen but rather look at sub regions of the screen to understand what 
+is going on. The same applies to the pooling layer. The two main pooling layers are a maximum pooling layer and an average pooling 
+layer. The maximum pooling layer outputs the maximum value of the sub region. The average pooling layer computes the average value 
+of the sub region. Since CNN deals with many layers, data are organized in high dimensional spaces. When analyzing data in high 
+dimensional spaces, an analyst suffers from **“the curse of dimensionality”**. 
+
+The curse of dimensionality refers to various phenomena that arise when analyzing data in high dimensional spaces that do not occur 
+in low dimensional settings, such as three dimensional 
+ physical space. We use the pooling layer to solve this problem and further **reduce spatial dimensions**. 
+ 
+ The main benefits of reducing 
+ spatial dimensions are immensely improved computational performance. Furthermore, you have less parameters to train the model on,
+  thus reducing the chances of **over-fitting**, which is a major problem for training any machine learning models. Briefly, over-fitting 
+  is: the artifact of an analysis that corresponds too closely to a particular set of data and, therefore, fails to fit additional data
+   or predict future observations reliably. The pooling layer improves prediction by reducing spatial dimensions and over-fitting, 
+   thus improving the overall reliability of the model.
+   
+   You can learn more about over fitting [here](https://medium.com/predict/what-overfitting-is-and-how-to-fix-it-887da4bf2cba)
 
 Basic Implementation & Demonstration using Keras
 ------------------------
