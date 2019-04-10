@@ -104,7 +104,7 @@ in low dimensional settings, such as three dimensional
    or predict future observations reliably. The pooling layer improves prediction by reducing spatial dimensions and over-fitting, 
    thus improving the overall reliability of the model.
    
-   You can learn more about over fitting [here](https://medium.com/predict/what-overfitting-is-and-how-to-fix-it-887da4bf2cba)
+   You can learn more about **over-fitting** [here](https://medium.com/predict/what-overfitting-is-and-how-to-fix-it-887da4bf2cba)
    
 
 Activation Layer
@@ -123,15 +123,25 @@ Success of CNNs
 -------------------
 It is not an overstatement that the recent surge of interest in deep learning is due to the immense popularity and 
 effectiveness of CNNs. The interest in CNNs started with AlexNet in 2012 and has grown ever since. 
-It took only 3 years for researchers to progress from 8 layer AlexNet to 152 layer ResNet.
+It took only 3 years for researchers to progress from **8 layer AlexNet to 152 layer ResNet**.
  Imagine how extraordinarily accurate a neural network can be with 152 layers! 
 
-Key Takeaway & Summary
+Summary
 ------------------
+-   Perform convolution on an image with a ReLU activation layer to the matrix. 
 
+-   ReLU is extremely cheap and speeds up computations
+
+-   Pooling layer reduces dimensionality size, thus reduces **"the curse of dimensionality"**
+
+-   Add convolution layers until you are satisfied with the result 
+
+Key Takeaway
+------------------
 -   ConvNets represents a major accomplishment for Artificial Intelligence and will be used well into the future. Understanding how CNNs models operate can help us understand how we learn as human beings.
 
--    The general public thinks companies like Tesla, Mercedes-Benz, BMW, and other large car companies are the ones who is inventing self-driving cars with amazing features. However, we should never forget the researchers, such as Geoffery Hilton, who made the modern technology possible. 
+-   ConvNets is and will be the main building block for many life-changing technological improvements in the upcoming years.
+
 
 
 
