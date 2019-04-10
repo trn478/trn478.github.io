@@ -133,8 +133,7 @@ Key Takeaway & Summary
 
 -    The general public thinks companies like Tesla, Mercedes-Benz, BMW, and other large car companies are the ones who is inventing self-driving cars with amazing features. However, we should never forget the researchers, such as Geoffery Hilton, who made the modern technology possible. 
 
-Summary
--------------------
+
 
 
 
