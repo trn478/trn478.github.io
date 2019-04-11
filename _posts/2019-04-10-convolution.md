@@ -2,7 +2,7 @@
 title: Convolutional Neural Networks(CNNs)
 ---
 
-What is Convolutional Neural Network(CNNs)?
+**What is Convolutional Neural Network(CNNs)?**
 ----------
 
 Convolutional neural network are used to find patterns in a given image. Through convolution over an image, for pixels in rows and column of the image, seeking suitable patterns. Layers in CNNs that helps the model identify images. 
@@ -11,7 +11,7 @@ Convolutional neural network are used to find patterns in a given image. Through
 
 Source : [CSC231](http://cs231n.github.io/convolutional-networks/)
 
-Quick Shout out - Founder of CNNs
+**Quick Shout out - Founder of CNNs**
 ----------
 [**Geoffrey Hinton**](http://www.cs.toronto.edu/~hinton/) 
 
@@ -22,7 +22,7 @@ Quick Shout out - Founder of CNNs
 - Emeritus Distinguished Professor of Computer Science, University of Toronto 
 
 
-What does CNNs do?
+**What does CNNs do?**
 -------------------
 
 Through convolution over an image, for pixels in rows and column of the image, seeking suitable patterns.
@@ -32,7 +32,7 @@ Layers in CNNs that helps the model identify images. To elaborate, in the first 
  appearance of the object and then classify it, based on the complex knowledge in our memory. The ability to use multiple 
  layers makes CNNs exceptional at detecting objects in high dimensional images.
 
-Where is it used?
+**Where is it used?**
 -------------------
 
 CNNs was a major breakthrough for AI, it has made massive improvements possible for certain stagnant fields of Machine Learning, such as neural network. CNNs enabled developers with the capability of providing the end-user with more personalized products and services.
@@ -48,7 +48,7 @@ CNNs was a major breakthrough for AI, it has made massive improvements possible 
 4) Natural Language Processing (**NLP**)
 
 
-Layers in CNNs
+**Layers in CNNs**
 -------------------
 1) Convolution Layer 
 
@@ -58,7 +58,7 @@ Layers in CNNs
 
 To understand how CNNs works, we must learn about convolutions. But, what are convolutions? 
 
-Convolutions & Convolution Layer
+**Convolutions & Convolution Layer**
 -------------------
 
 **Convolutions** involve iterating through each pixels of the image and applying filter to find some patterns.
@@ -75,7 +75,7 @@ through the kernel. The purpose of a convolution layer is to filter. As we itera
 for patterns in that particular section of the image. This is done through filters, stacks of weight represented in vector 
 form, which are multiplied by the values outputted by the convolution.
 
-Pooling Layer & Problems related to CNNs
+**Pooling Layer & Problems related to CNNs**
 -------------------
 The layer in-between successive convolution layers in CNNs architecture is called the **pooling layer**. It partitions the input 
 image into non-overlapping rectangles and, for each partition, outputs a value. The intuition behind the pooling layer is that 
@@ -107,7 +107,7 @@ in low dimensional settings, such as three dimensional
    You can learn more about **over-fitting** [here](https://medium.com/predict/what-overfitting-is-and-how-to-fix-it-887da4bf2cba)
    
 
-Activation Layer
+**Activation Layer**
 -------------------
  Activation layers pass values through a function that squashes the value into a range. 
  The most common activation function is the **ReLu** activation function.
@@ -119,14 +119,14 @@ Activation Layer
   ReLu function takes an input and returns the input if the input is positive else return zero. 
   ReLu is extremely cheap to perform and, thus commonly used in development of deep learning models
   
-Success of CNNs
+**Success of CNNs**
 -------------------
 It is not an overstatement that the recent surge of interest in deep learning is due to the immense popularity and 
 effectiveness of CNNs. The interest in CNNs started with AlexNet in 2012 and has grown ever since. 
 It took only 3 years for researchers to progress from **8 layer AlexNet to 152 layer ResNet**.
  Imagine how extraordinarily accurate a neural network can be with 152 layers! 
 
-Summary
+**Summary**
 ------------------
 -   Perform convolution on an image with a ReLU activation layer to the matrix. 
 
@@ -136,7 +136,7 @@ Summary
 
 -   Add convolution layers until you are satisfied with the result 
 
-Key Takeaway
+**Key Takeaway**
 ------------------
 -   CNNs represents a major accomplishment for Artificial Intelligence and will be used well into the future. Understanding how CNNs models operate can help us understand how we learn as human beings.
 
