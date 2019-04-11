@@ -154,6 +154,10 @@ If you made it this point, you have a simple messaging web app. Let's run it.
 
     npm start
     
+This is what you will see.
+
+![](<../images/msg.PNG>)
+    
 This is a simple use of **React + Firebase**. Feel free to modify the code for your own use!
 
 Cheers! 
