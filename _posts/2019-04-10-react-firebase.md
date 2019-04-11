@@ -43,6 +43,9 @@ then go to Authentication tab and enable Anonymous.
 
 Later on you can add other authentications, but for now let's keep it simple.
 
+You have to make sure to go to **Firebase.js** and plug in your 
+configurations that is specified in **Project Overview** in Firebase Console.
+
 **Create React Application**
 ----
 
@@ -72,5 +75,85 @@ This is what you should see
 ![](<../images/react.png>)
 
 
+**Creating Form & Input**
+----
+
+Firstly, let's create a form where users can type in their messages
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ javascript
+# App.js
+render() {
+    return (
+      <form onSubmit={this.onAddMessage}>
+        <input type="text" ref={node => this.input = node}/>
+        <input type="submit"/>
+        <ul>
+          {this.state.messages.map(message =>
+            <li key={message.id}>{message.text}</li>
+          )}
+        </ul>
+      </form>
+    );
+ }
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+I have built the form in App.js for simplicity but you should create a 
+separate component, like Form.js for forms to enhance its features.
 
 
+**Creating a Message**
+----
+
+Our message will only contain one property, the s.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ javascript
+  constructor() {
+      super();
+      this.state = {
+        messages: [],
+      };
+    }
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+**Handling Events**
+----
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ javascript
+  componentWillMount() {
+    const messagesRef = database.ref('messages')
+      .orderByKey()
+      .limitToLast(300);
+    # Snapshot message and store it
+    messagesRef.on('child_added', snapshot => {
+      const message = { text: snapshot.val(), id: snapshot.key };
+
+      this.setState(prevState => ({
+        messages: [ message, ...prevState.messages ],
+      }));
+    });
+  }
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+When user inputs a message.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ javascript
+  onAddMessage(event) {
+    event.preventDefault();
+    # Push input to messages
+    database.ref('messages').push(this.input.value);
+    # Set input back to empty string
+    this.input.value = '';
+  }
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+**Running the App**
+----
+If you made it this point, you have a simple messaging web app. Let's run it.
+
+    npm start
+    
+This is a simple use of **React + Firebase**. Feel free to modify the code for your own use!
+
+Cheers! 
