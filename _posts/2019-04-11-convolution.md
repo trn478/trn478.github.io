@@ -1,11 +1,11 @@
 ---
-title: Convolutional Neural Networks(CNNs)
+title: Convolutional Neural Networks (CNNs)
 ---
 
-**What is Convolutional Neural Network(CNNs)?**
+**What is Convolutional Neural Networks (CNNs)?**
 ----------
 
-Convolutional neural network are used to find patterns in a given image. Through convolution over an image, for pixels in rows and column of the image, seeking suitable patterns. Layers in CNNs that helps the model identify images. 
+Convolutional neural network are used to find patterns in a given image. Through convolution over an image, for pixels in rows and columns of the image, seeking suitable patterns. Layers in CNNs that helps the model identify images. 
 
 ![](<../images/cnns.jpg>)
 
@@ -22,10 +22,10 @@ Source : [CSC231](http://cs231n.github.io/convolutional-networks/)
 - Emeritus Distinguished Professor of Computer Science, University of Toronto 
 
 
-**What does CNNs do?**
+**What does Convolutional Neural Networks do?**
 -------------------
 
-Through convolution over an image, for pixels in rows and column of the image, seeking suitable patterns.
+Through convolution over an image, for pixels in rows and columns of the image, seeking suitable patterns.
 Layers in CNNs that helps the model identify images. To elaborate, in the first few layers of CNNs, the network identifies 
  lines and corners. Then, we pass these patterns to the next layer through neural networks and start recognizing more complex 
  features as we get deeper into the neural network. This is similar to how our own brain works. We first identify the 
